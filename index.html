@@ -722,6 +722,99 @@ By Ali Akash Tariq
         
     </div>
 
+  <div class="container" style="text-align:left;">
+      <h2 class="name">CSS Selectors</h2>
+      <h3 class="heading">Simple selectors</h3>
+      <pre >
+        p {
+          text-align: center;
+          color: red;
+        }
+      </pre>
+      <p class="explanation">(selects HTML elements based on the element name.)</p>
+     
+      <pre >
+        #para1 {
+          text-align: center;
+          color: red;
+        }
+      </pre>
+      <p class="explanation">(selects HTML elements based on id name. Id is always unique.)</p>
+    
+     
+      <pre >
+        .center {
+          text-align: center;
+          color: red;
+        }
+      </pre>
+      <p class="explanation">(selects HTML elements based on class name. Same class can be applied to many elements.)</p>
+    
+      <pre >
+        * {
+          text-align: center;
+          color: blue;
+        }
+      </pre>
+      <p class="explanation">(Universal selector (*) selects all HTML elements on the page.)</p>
+    
+      <pre >
+        h1, h2, p {
+          text-align: center;
+          color: red;
+        }
+      </pre>
+      <p class="explanation">(We can select multiple tags at once.)</p>
+    
+      <h3 class="heading">CSS Combinators selectors</h3>
+
+      <pre >
+        div p {
+          background-color: yellow;
+        }
+      </pre>
+      <p class="explanation">(The following example selects all <span><</span>p> elements inside <span><</span>div> elements.)</p>
+    
+      <pre >
+        div > p {
+          background-color: yellow;
+        }
+      </pre>
+      <p class="explanation">(The child selector selects all elements that are the children of a specified element.)</p>
+    
+      <pre >
+        div + p {
+          background-color: yellow;
+        }
+      </pre>
+      <p class="explanation">(This tag is used to select an element that is directly after another specific element.)</p>
+    
+      <pre >
+        div ~ p {
+          background-color: yellow;
+        }
+      </pre>
+      <p class="explanation">(This tag  selects all elements that are next siblings of a specified element.)</p>
+    
+      <h3 class="heading">Pseudo selectors</h3>
+      <pre >
+        selector:pseudo-class {
+          property: value;
+        }
+      </pre>
+      <p class="explanation">(A pseudo-class is used to define a special state of an element.)</p>
+    
+      <pre >
+        p:first-child {
+          color: blue;
+        }
+      </pre>
+      <p class="explanation">(following example, the selector matches any <span><</span>p> element that is the first child of any element.)</p>
+    
+
+
+  </div>
+
 
     
 </html>

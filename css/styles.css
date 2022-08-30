@@ -62,3 +62,6 @@ hr{
 mark {
     background-color:var(--font-clr);
   }
+pre{
+    font-size: 2rem;
+}
